@@ -1,0 +1,89 @@
+/* ===== Admin Deal View Product Page ===== */
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Table Styling ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+table th {
+    background: #343a40;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* Zebra striping */
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table tr:hover {
+    background-color: #eef3ff;
+    transition: background 0.3s ease;
+}
+
+/* Price Highlight */
+td:last-child {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Empty state */
+table tr td[colspan] {
+    padding: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
