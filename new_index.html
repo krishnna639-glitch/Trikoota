@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Trikoota Navigation</title> 
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <style> 
+        :root { 
+            --header-green: #4CAF50; /* Adjust to match your exact green */ 
+            --dark-text: #1a3306; 
+        } 
+ 
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f7e6; 
+        } 
+ 
+        /* The Main Navigation Bar Container */ 
+        .navbar { 
+            background-color: var(--header-green); 
+            display: flex; 
+            justify-content: space-between; /* This pushes brand left and tools right */ 
+            align-items: center; 
+            padding: 10px 20px; 
+            color: white; 
+        } 
+ 
+        /* LEFT SIDE: Logo and Title */ 
+        .nav-left { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        } 
+ 
+        .logo-box { 
+            width: 45px; 
+            height: 45px; 
+            border: 2px solid white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-size: 24px; 
+        } 
+ 
+        .brand-name { 
+            font-size: 24px; 
+            font-weight: bold; 
+            letter-spacing: 1px; 
+            margin: 0; 
+        } 
+ 
+        /* RIGHT SIDE: Links, Login, and Search */ 
+        .nav-right { 
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+        } 
+ 
+        .nav-links { 
+            display: flex; 
+            gap: 15px; 
+        } 
+ 
+        .nav-links a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: 500; 
+            font-size: 14px; 
+            text-transform: capitalize; 
+        } 
+ 
+        .login-reg { 
+            font-size: 14px; 
+            font-weight: 500; 
+            white-space: nowrap; 
+        } 
+ 
+        /* Search Bar Styling from Sketch */ 
+        .search-container { 
+            display: flex; 
+            align-items: center; 
+            background: white; 
+            border-radius: 4px; 
+            padding: 2px 8px; 
+            border: 1px solid #ccc; 
+        } 
+ 
+        .search-container input { 
+            border: none; 
+            outline: none; 
+            padding: 4px; 
+            width: 100px; 
+            font-size: 12px; 
+        } 
+ 
+        .search-container i { 
+            color: #666; 
+            font-size: 12px; 
+        } 
+ 
+        /* Action Icons */ 
+        .nav-icons { 
+            display: flex; 
+            gap: 12px; 
+            font-size: 18px; 
+        } 
+ 
+        .nav-icons i { 
+            cursor: pointer; 
+        } 
+ 
+    </style> 
+</head> 
+<body> 
+ 
+    <nav class="navbar"> 
+        <div class="nav-left"> 
+            <div class="logo-box"> 
+                <i class="fa-solid fa-seedling"></i> 
+            </div> 
+            <h1 class="brand-name">TRIKOOTA</h1> 
+        </div> 
+ 
+        <div class="nav-right"> 
+            <div class="nav-links"> 
+                <a href="#">Home</a> 
+                <a href="#">Shop</a> 
+                <a href="#">Deals</a> 
+                <a href="#">Support</a> 
+            </div> 
+ 
+            <div class="login-reg">Login / Register</div> 
+ 
+            <div class="search-container"> 
+                <input type="text" placeholder="Search"> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </div> 
+ 
+            <div class="nav-icons"> 
+                <i class="fa-solid fa-box"></i> 
+                <i class="fa-regular fa-heart"></i> 
+<i class="fa-solid fa-cart-shopping"></i> 
+</div> 
+</div> 
+</nav> 
+</body> 
+</html>
